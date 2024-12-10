@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobLink24</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>JobLink24</h1>
+            <nav>
+                <button onclick="openModal('login')">Login</button>
+                <button onclick="openModal('terms')">Geschäftsbedingungen</button>
+                <button onclick="openModal('privacy')">Datenschutz</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h2>Finden Sie Arbeit oder Arbeitskräfte anonym und sicher</h2>
+            <p>Ihre Plattform für sichere und anonyme Jobvermittlung</p>
+            <div class="cta-buttons">
+                <button>Ich suche Arbeit</button>
+                <button>Ich biete Arbeit</button>
+            </div>
+        </section>
+        <section class="testimonials">
+            <h3>Erfolgsgeschichten</h3>
+            <div class="testimonial">
+                <p>"Dank JobLink24 habe ich meinen Traumjob gefunden!"</p>
+                <p>- Max Mustermann</p>
+            </div>
+            <div class="testimonial">
+                <p>"Unsere Firma fand schnell qualifizierte Fachkräfte."</p>
+                <p>- Musterfirma GmbH</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 JobLink24. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
